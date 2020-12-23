@@ -228,10 +228,10 @@ input[type=number] {
 
 /* Social Media Logo */
 .connect-us-with-title{
-    padding-left: 3%;
+    padding-left: 10%;
 }
 .connect-us-with a {
-    padding: 2%;
+    padding: 1%;
     font-size: 20px;
     width: 10%;
     text-align: center;
@@ -270,6 +270,11 @@ input[type=number] {
   
   .fa-instagram:hover {
     color: #125688;
+    text-decoration: none;
+
+  }
+  .fa-pinterest:hover {
+    color: #E60023;
     text-decoration: none;
 
   }
@@ -833,9 +838,10 @@ img {vertical-align: middle;}
         margin-bottom: 0px;
     }
     .facilities-landscape img{
-        src: url('https://source.unsplash.com/350x370/?Swimming-Pool,swimmer');  
+        src: url('https://source.unsplash.com/350x370/?Swimming-Pool,swimmer');
         height: 370px;
-        width: 350px;  
+        image-rendering: auto;
+        background-size: cover;
     }
     .facility-description-landscape{
         text-align: center;
