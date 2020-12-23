@@ -1,0 +1,241 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/malshej_agro_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home | Malshej Agro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide">
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/malshej_agro_logo.png" alt="malshej-agro-logo" height="55px" width="90px">
+            </div>
+            <div class="navbar">
+                <ul class="navbar-unorder-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Our Plans</a></li>
+                    <li><a href="">My Reservation</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="user-profile">
+                <div class="profile-photo">
+                    <span class="user-icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="sign-in-modal">
+                    <a href="" data-toggle="modal" data-target="#signin-modal" class="sign-in-link">SIGN IN</a>
+                    <!-- Login Modal -->
+                    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="signin-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="signin-modalLabel">Login Here</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <form>
+                            <div class="modal-body">
+                            
+                        <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                        </div>
+                        
+                    
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                                <span class="signin-modal-link">New Member? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signup-modal" class="sign-up-link">SIGN IN</a></span>
+                            </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up-modal">
+                    <!-- SigunUp Modal -->
+                    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-modalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="signup-modalLabel">Sign-up Here</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <form>
+                            <div class="modal-body">
+                         
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                    <input type="text" class="form-control" id="user-name" aria-describedby="NameHelp" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Contact</label>
+                                    <input type="number" class="form-control" id="user-contact" placeholder="+91-XXXXXXXXXX" value="+91-">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                                <span class="signup-modal-link">Already Have an Account? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signin-modal" class="sign-up-link">Login Here</a></span>
+                            </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="profile-name">
+                    Mr.John
+                </div> -->
+            </div>
+        </div>
+    </header>
+    
+    <section class="gallary-section">
+        <div class="gallery-title">
+            <p>Welcome to Our Gallery</p>
+        </div>
+        <div class="gallery-images">
+            <div class="row"> 
+                <div class="column">
+                  <img src="https://source.unsplash.com/600x450/?Farm,Farming" style="width:100%">
+                  <img src="https://source.unsplash.com/700x550/?Actress,Actor" style="width:100%">
+                  <img src="https://source.unsplash.com/700x650/?Fashion,Car" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?cycle,bike" style="width:100%">
+                  <img src="https://source.unsplash.com/300x200/?watch,clock" style="width:100%">
+                  <img src="https://source.unsplash.com/700x450/?Man,Stud" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?cycle,bike" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="https://source.unsplash.com/900x350/?Yellow,Grass" style="width:100%">
+                  <img src="https://source.unsplash.com/500x350/?Jeans,Pant" style="width:100%">
+                  <img src="https://source.unsplash.com/600x450/?Farm,Farming" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?Pink,Resort" style="width:100%">
+                  <img src="https://source.unsplash.com/700x550/?Actress,Actor" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?Yellow,Grass" style="width:100%">
+                </div>  
+                <div class="column">
+                  <img src="https://source.unsplash.com/600x450/?Farm,Farming" style="width:100%">
+                  <img src="https://source.unsplash.com/700x550/?Actress,Actor" style="width:100%">
+                  <img src="https://source.unsplash.com/700x650/?Fashion,Car" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?cycle,bike" style="width:100%">
+                  <img src="https://source.unsplash.com/300x200/?watch,clock" style="width:100%">
+                  <img src="https://source.unsplash.com/700x450/?Man,Stud" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?cycle,bike" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="https://source.unsplash.com/900x350/?Yellow,Grass" style="width:100%">
+                  <img src="https://source.unsplash.com/500x350/?Jeans,Pant" style="width:100%">
+                  <img src="https://source.unsplash.com/600x450/?Farm,Farming" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?Pink,Resort" style="width:100%">
+                  <img src="https://source.unsplash.com/700x550/?Actress,Actor" style="width:100%">
+                  <img src="https://source.unsplash.com/900x350/?Yellow,Grass" style="width:100%">
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <footer style="margin-top: 100%;">
+        <div class="footer">
+            <div class="quick-links">
+                <div class="quick-lick-title">
+                    <p>Quick Links</p>
+                </div>
+                <ul>
+                    <li><a href="">DO's & Dont's</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Conference</a></li>
+                    <li><a href="">Tourist Place</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <div class="contact-us-title">
+                    <p>Contact Us</p>
+                </div>
+                <span>Email:</span><br>
+                <span>
+                    <a href="mailto:malshejagrotf@gmail.com">malshejagrotf@gmail.com</a>
+                    <br>
+                    <a href="mailto:365daysholidays143@gmail.com">365daysholidays143@gmail.com</a>
+                </span>
+                <br><span>Customer Care:</span><br>
+                <span>
+                    <a href="tel:+917666999143">7666999143</a>,
+                    <a href="tel:+919167218539">9167218539</a><br>
+                    <a href="tel:+917262837521">7262837521</a>,
+                    <a href="tel:+917558766649">7558766649</a>
+                </span>
+            </div>
+            <div class="connect-us-with">
+                <div class="connect-us-with-title">
+                    <p>Connect Us With</p>
+                </div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2017-20 MALSHEJ AGRO TOURISM AND FARM - All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>

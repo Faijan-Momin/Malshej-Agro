@@ -1,0 +1,488 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/malshej_agro_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home | Malshej Agro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide">
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../package/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../package/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="images/malshej_agro_logo.png" alt="malshej-agro-logo" height="55px" width="90px">
+            </div>
+            <div class="navbar">
+                <ul class="navbar-unorder-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Our Plans</a></li>
+                    <li><a href="">My Reservation</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <div class="user-profile">
+                <div class="profile-photo">
+                    <span class="user-icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="sign-in-modal-link">
+                    <a href="" data-toggle="modal" data-target="#signin-modal" class="sign-in-link">SIGN IN</a>
+                </div>
+                <!-- <div class="profile-name">
+                    Mr.John
+                </div> -->
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="mobile-header-hamburger">
+                <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <div id="mobile-Nav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-contents">
+                        <ul>
+                            <li><a href="home.html">Home</a></li> <hr class="hr-rounded">
+                            <li><a href="gallery.html">Gallery</a></li> <hr class="hr-rounded">
+                            <li><a href="">Our Plans</a></li> <hr class="hr-rounded">
+                            <li><a href="">My Reservation</a></li> <hr class="hr-rounded">
+                            <li><a href="">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-header-logo">
+                <img src="images/malshej_agro_logo.png" alt="malshej-agro-logo" height="35px" width="60px">
+            </div>
+            <div class="mobile-user-profile" id="user-icon">
+                <div class="profile-photo">
+                    <span class="user-icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                </div>
+                <div class="sign-in-modal-link">
+                    <a href="" data-toggle="modal" data-target="#signin-modal" class="sign-in-link">SIGN IN</a>
+                </div>
+                <!-- <div class="profile-name">
+                    Mr.John
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Modals -->
+
+        <div class="sign-in-modal">
+            <!-- Login Modal -->
+            <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="signin-modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="signin-modalLabel">Login Here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <form>
+                    <div class="modal-body">
+                    
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                </div>
+                
+            
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-block">Login</button>
+                        <span class="signin-modal-link">New Member? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signup-modal" class="sign-up-link">SIGN IN</a></span>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="sign-up-modal">
+            <!-- SigunUp Modal -->
+            <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="signup-modalLabel">Sign-up Here</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <form>
+                    <div class="modal-body">
+                 
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="text" class="form-control" id="user-name" aria-describedby="NameHelp" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Contact</label>
+                            <input type="number" class="form-control" id="user-contact" placeholder="+91-XXXXXXXXXX" value="+91-">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                        <span class="signup-modal-link">Already Have an Account? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signin-modal" class="sign-up-link">Login Here</a></span>
+                    </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="advertising-banners">
+        <div class="advertising-banner-slideshow">
+            <div class="swiper-container" id="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="https://source.unsplash.com/1600x900/?Resort,Hotel" alt="advertising banners" style="width: 100%;">
+                        <div class="advertising-banner-info">
+                            <h1>Resort</h1>
+                            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://source.unsplash.com/1600x900/?Farm,Farming" alt="advertising banners" style="width: 100%;">
+                        <div class="advertising-banner-info">
+                            <h1>Farm</h1>
+                            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://source.unsplash.com/1600x900/?Tourism,Enjoyment" alt="advertising banners" style="width: 100%;">
+                        <div class="advertising-banner-info">
+                            <h1>Tourism</h1>
+                            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+        <div class="mobile-advertising-slideshow-banner">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/Youtube Video Poster.png" style="width:100%">
+                  <div class="text">Caption Text</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/Youtube Video Poster.png" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/Youtube Video Poster.png" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+                
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+        </div>
+        <div class="welcome-text">
+            <p>Welcome To Malshej Agro Tourism & Farm</p>
+        </div>
+    </section>
+
+    <section class="video-advertising">
+        <div class="video-advertising-details">
+            <div style="cursor: pointer;"  onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                <img class="video" src="images/Youtube Video Poster.png" style="cursor:pointer" />
+            </div>
+             <div style="display:none">
+                <iframe class="video" width="90%" height="60%" src="https://www.youtube.com/embed/9QMOvmpbV2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+            <div class="video-title">
+                <p>Peaceful Nature of Our Resort</p>
+            </div>
+            <div class="video-detalis">
+                <p class="video-detail-description">Do visit our youtube channel for more information</p>
+                <a class="video-detalis-link" href="https://www.youtube.com/channel/UCaQhqvnba5ailjO5jtNyOxg/about" target="_blank" rel="noopener noreferrer">
+                    <p>Learn More></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="resort-amenities">
+        <div class="amentites-title">
+            <p>Amenitites</p>
+        </div>
+        <div class="our-amenities">
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/wifi.png" alt="amenities" width="40px">
+                </span>
+                <p>Free Wifi</p>
+            </div>
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/ac.png" alt="amenities" width="40px">
+                </span>
+                <p>Air Condition</p>
+            </div>
+            
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/24_7.png" alt="amenities" width="40px">
+                </span>
+                <p>24/7 Service</p>
+            </div>
+            
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/bathroom-am.jpg" alt="amenities" width="40px">
+                </span>
+                <p>Bathroom Amenities</p>
+            </div>
+            
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/fan.png" alt="amenities" width="40px">
+                </span>
+                <p>Fan</p>
+            </div>
+            
+            <div class="amenities">
+                <span class="amenities-symbol">
+                    <img src="images/bathtub.png" alt="amenities" width="40px">
+                </span>
+                <p>Bathtub</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="resort-facilities">
+        <div class="facility-title">
+            <p>Stay Your Way At Malshej Agro</p>
+        </div>
+        <div class="our-facilities">
+            <div class="facilities">
+                <div class="facility-image">
+                    <img src="https://source.unsplash.com/350x370/?conference Hall,hall" alt="Our-facilities">
+                </div>  
+                <div class="facility-description">
+                    <p class="desc-title">Conference Hall</p>
+                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div> 
+                <div class="facility-learn-more">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn More>
+                    </a>
+                </div>             
+            </div>
+            <div class="facilities">
+                <div class="facility-image">
+                    <img src="https://source.unsplash.com/350x370/?Cricket_match,Football" alt="Our-facilities">
+                </div>  
+                <div class="facility-description">
+                    <p class="desc-title">Outdoor Games</p>
+                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div> 
+                <div class="facility-learn-more">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn More>
+                    </a>
+                </div>             
+            </div>
+            <div class="facilities">
+                <div class="facility-image">
+                    <img src="https://source.unsplash.com/350x370/?Indoor_Games,Carrom" alt="Our-facilities">
+                </div>  
+                <div class="facility-description">
+                    <p class="desc-title">Indoor Games</p>
+                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div> 
+                <div class="facility-learn-more">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn More>
+                    </a>
+                </div>             
+            </div>
+        </div>
+        <div class="facilities-landscape">
+            <div class="facility-image-landscape">
+                <img src="https://source.unsplash.com/700x250/?Swimming-Pool,swimmer" alt="Our-facilities">
+            </div>  
+            <div class="facility-description-landscape">
+                <p class="desc-title">Swimming Pool</p>
+                <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br><br>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                    Learn More>
+                </a>
+            </div>              
+        </div>
+    </section>
+
+    <section class="user-registration">
+        <div class="quick-registration-title">
+            <p>Register your Stay within a minute</p>
+        </div>
+        <div class="user-info">
+            <div class="user-details">
+                <div class="user-name">
+                    <label for="no-of-guest">Name:</label><br>
+                    <input type="text" name="user-name" id="user-name" placeholder="eg: John Doe">
+                </div>
+                <div class="user-email">
+                    <label for="no-of-guest">Email Address:</label><br>
+                    <input type="email" name="user-email" id="user-email" placeholder="eg: John@gmail.com">
+                </div>
+                <div class="arrival-date">
+                    <label for="arrival-date">Arrival:</label><br>
+                    <input type="date" name="arrival-date" id="arrival-date" value="2020-12-17">
+                </div>
+                <div class="departure-date">
+                    <label for="departure-date">Departure:</label><br>
+                    <input type="date" name="departure-date" id="departure-date" value="2020-12-17">
+                </div>
+                <div class="no-of-guest">
+                    <label for="no-of-guest">No. of Guests:</label><br>
+                    <button onclick="decrement()"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <input name="no-of-guest" id=no-of-guest type=number min=1 max=15 value="1">
+                    <button onclick="increment()"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+            </div>
+            <div class="register-button">
+                <input type="button" value="Book Now">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="location-map">
+        <div class="map-title">
+            <p>Way to Us</p>
+        </div>
+        <div class="map-details">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1883.1994921437988!2d73.915208!3d19.265008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6de3079739335ef5!2sMalshej%20Agro%20Tourism%20and%20Farm!5e0!3m2!1sen!2sin!4v1608197142681!5m2!1sen!2sin" width="450" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="map-address">
+                <p class="adress-title">Address</p><br>
+                <p class="address">Malshej Agro Tourism & Farm
+                    Ghodemal, A/P : Dingor,
+                    Tal : Junnar, Dist : Pune</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="quick-links">
+                <div class="quick-lick-title">
+                    <p>Quick Links</p>
+                </div>
+                <ul>
+                    <li><a href="">DO's & Dont's</a></li>
+                    <li><a href="">Feedback</a></li>
+                    <li><a href="">Conference</a></li>
+                    <li><a href="">Tourist Place</a></li>
+                    <li><a href="">About Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <div class="contact-us-title">
+                    <p>Contact Us</p>
+                </div>
+                <span>Email:</span><br>
+                <span>
+                    <a href="mailto:malshejagrotf@gmail.com">malshejagrotf@gmail.com</a>
+                    <br>
+                    <a href="mailto:365daysholidays143@gmail.com">365daysholidays143@gmail.com</a>
+                </span>
+                <br><span>Customer Care:</span><br>
+                <span>
+                    <a href="tel:+917666999143">+91-7666999143</a>,
+                    <a href="tel:+919167218539">+91-9167218539</a><br>
+                    <a href="tel:+917262837521">+91-7262837521</a>,
+                    <a href="tel:+917558766649">+91-7558766649</a>
+                </span>
+            </div>
+            <div class="connect-us-with">
+                <div class="connect-us-with-title">
+                    <p>Connect Us With</p>
+                </div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2017-20 MALSHEJ AGRO TOURISM AND FARM - All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
