@@ -131,21 +131,8 @@ div.navbar{
     transition: 0.3s;
   }
   .overlay-contents a:hover{
-    background: linear-gradient(-45deg, #80ff72, #7ee8fa, #80ff72, #7ee8fa);
-	background-size: 400% 400%;
-	animation: gradient 3s ease infinite;
+    color: white;
   }
-  @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
   .overlay-contents li{
      list-style: none;
   }
@@ -317,6 +304,9 @@ input[type=number] {
     }
     .hamburger{
         display: block;
+    }
+    .hamburger:hover{
+        color: white;
     }
     .mobile-header{
         display: grid;
@@ -653,7 +643,7 @@ img {vertical-align: middle;}
 .video-detail-description{
     text-align: center;
     font-size: 1rem;
-    color: #666;4
+    color: #666;
     font-family: 'Open Sans', sans-serif;
 }
 .video-detalis a{
