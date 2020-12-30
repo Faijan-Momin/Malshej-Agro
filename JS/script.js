@@ -42,6 +42,17 @@ function decrement() {
   document.getElementById('no-of-guest').stepDown();
 }
 
+
+function MobileNav(){
+  if(document.getElementById("mobile-Nav").style.height == "100%"){
+      closeNav();
+  }
+  else{
+      openNav();
+  }
+}
+
+
 function openNav() {
   document.getElementById("mobile-Nav").style.height = "100%";
 }
