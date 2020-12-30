@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;  
   }
+  ::-webkit-scrollbar {
+    display: none;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: white;
@@ -16,6 +19,7 @@ header{
     overflow: hidden;
     background-color: #282828;
 }
+
 .header{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -94,13 +98,11 @@ div.navbar{
 }
 
 
+ /* Mobile - NavBar */
 
-
-/* Mobile NavBar */
 .hamburger{
     display: none;
-}
-
+ }
 
   .line {
     fill: none;
@@ -444,18 +446,28 @@ input[type=number] {
         font-size: 65%;
         text-transform: capitalize;
     }
-      
-      @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-      }
-
+    .signin-modal-link{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    .signup-modal-link{
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    
 }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
-/* Overall Mobile CSS END*/
+ /* Overall Mobile CSS END*/
 
 
-/* Splash Screen */
+ /* Splash Screen */
 
 .overlay-content{
     display: flex;
@@ -642,13 +654,124 @@ img {vertical-align: middle;}
 .video-advertising{
     margin-left: 20%;
     margin-right: 20%;
-    padding: 20px;
+    
 }
 .video-advertising-details{
     background-color: white;
     box-shadow: #666 0px 2px 12px -6px;
     padding-bottom: 10px;
+    padding: 2%;
+    padding-top: 0px;
 }
+.video-advertising-close-btn{
+    background-color: transparent;
+    color: #282828;
+    border: none;
+    outline: none;
+    margin-left: 95%;
+    font-size: 25px;
+}
+
+
+/* Video Poster */
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+  }
+  .videoWrapper43 {
+    padding-top: 75%;
+  }
+  .videoWrapper169 {
+    padding-top: 56%;
+  }
+  
+  .videoIframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  
+  .videoPoster {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-size: cover;
+    text-indent: -999em;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transition: opacity 800ms, height 0s;
+    -moz-transition: opacity 800ms, height 0s;
+    transition: opacity 800ms, height 0s;
+    -webkit-transition-delay: 0s, 0s;
+    -moz-transition-delay: 0s, 0s;
+    transition-delay: 0s, 0s;
+  }
+  .videoPoster:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin: -40px 0 0 -40px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  .videoPoster:after {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    width: 0;
+    height: 0;
+    margin: -20px 0 0 -10px;
+    border-left: 40px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    -webkit-transition: border-color 300ms;
+    -moz-transition: border-color 300ms;
+    transition: border-color 300ms;
+  }
+  .videoPoster:hover:before, .videoPoster:focus:before {
+    border-color: #0072ce;
+  }
+  .videoPoster:hover:after, .videoPoster:focus:after {
+    border-left-color: #0072ce;
+  }
+  .videoWrapperActive .videoPoster {
+    opacity: 0;
+    height: 0;
+    -webkit-transition-delay: 0s, 800ms;
+    -moz-transition-delay: 0s, 800ms;
+    transition-delay: 0s, 800ms;
+  }
+
+
+
+
+
+
+
 .video-ad{
     width: 100%;
     margin: auto;
@@ -688,11 +811,28 @@ img {vertical-align: middle;}
     color: #666;
     font-family: 'Open Sans', sans-serif;
 }
+.video-detalis{
+    text-align: center;
+    padding: 2%;
+}
 .video-detalis a{
     text-align: center;
     font-size: 1rem;
 }
-
+.video-detalis-link-button{
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: #0072ce;
+    color: white;
+    padding: 10px;
+    font-family: "Open Sans",Arial, sans-serif;
+}
+.video-detalis-link-button:hover{
+    background-color: #0161ae;
+}
 @media screen and (max-width: 900px) {
     .video-advertising{
         margin-left: 2%;
@@ -713,6 +853,61 @@ img {vertical-align: middle;}
 }
 
 /* Advertising Video END */
+
+/* Instagram Feed */
+
+.insagram-feeds{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 2%;
+}
+.insgram-feed-div{
+    text-align: center;
+}
+.instagram-feed-title p{
+    font-family: 'Cinzel',sans-serif;
+    font-size: 2.5rem;
+}
+.instagram-feed-background{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 320px;
+    border: none;
+    box-shadow: #282828 0px 2px 12px -6px;
+    border-radius: 7px;
+    background: url('/images/instagram.png');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    
+}
+.instagram-feed-image{
+    padding: 2%;
+    border: none;
+    height: 316px;
+    width: 316px;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+    position: relative;
+    top: 65px;
+}
+
+@media screen and (max-width: 900px) {
+    .insagram-feeds{
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 2%;
+    }
+    .instagram-feed-title p{
+        font-family: 'Cinzel',sans-serif;
+        font-size:2rem;
+    }
+}
+
+/* Instagram feed End */
 
 /* Amenitites */
 
@@ -819,6 +1014,10 @@ img {vertical-align: middle;}
 }
 .facility-learn-more{
     margin-bottom: 15px;
+    color: #407bae;
+}
+.facility-learn-more a{
+    color: #407bae;
 }
 
 @media screen and (max-width: 900px) {
@@ -872,10 +1071,14 @@ img {vertical-align: middle;}
 .facility-description-landscape{
     text-align: center;
     vertical-align: middle;
+    color: #407bae;
+    margin-bottom: 15px;
+}
+.facility-description-landscape-info{
     color: #666;
 }
-.facility-description-landscape{
-    margin-bottom: 15px;
+.facility-description-landscape a{
+    color: #407bae;
 }
 @media screen and (max-width: 900px) {
     .facilities-landscape{
@@ -1105,6 +1308,77 @@ img {vertical-align: middle;}
 /* Map Section End */
 
 
+/* Newsletter */
+
+.newsletter{
+    text-align: center;
+    padding: 3%;
+}
+.newsletter-title p{
+    font-size: 34px;
+    font-family: 'Cinzel',sans-serif;
+}
+.newsletter-inputs{
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 2%;
+}
+.newsletter-inputs input{
+    height: 45px;
+    width: 20%;
+    margin-right:30px ;
+    padding: 5px;
+}
+.newsletter-inputs button{
+    width: 15%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #407bae;
+    color: white;
+    font-weight: 500;
+}
+.newsletter-inputs button:hover{
+    background-color: #0161ae;
+}
+
+@media screen and (max-width: 900px) {
+    .newsletter{
+        text-align: center;
+        padding: 2%;
+    }
+    .newsletter-title p{
+        font-size: 25px;
+        font-family: 'Cinzel',sans-serif;
+    }
+    .newsletter-inputs{
+        font-family: "Open Sans", Arial, sans-serif;
+        padding: 0%;
+        padding-top: 2%;
+        padding-bottom: 4%;
+    }
+    .newsletter-inputs input{
+        height: 45px;
+        width: 50%;
+        margin-right:5px ;
+        padding: 5px;
+    }
+    .newsletter-inputs button{
+        width: 40%;
+        height: 45px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #407bae;
+        color: white;
+        font-weight: 500;
+    }
+}
+/* newsletter END */
+
+
+
+
 /* Home Page CSS END */
 
 /* Gallery Page CSS  */
@@ -1171,4 +1445,7 @@ img {vertical-align: middle;}
   }
 /* Gallery Images End */
 /* Gallery Page CSS  END*/
+
+
+
 

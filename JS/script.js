@@ -55,10 +55,14 @@ function MobileNav(){
 
 function openNav() {
   document.getElementById("mobile-Nav").style.height = "100%";
+  document.body.style.height= " 100%"; 
+  document.body.style.overflow= "hidden";
 }
 
 function closeNav() {
   document.getElementById("mobile-Nav").style.height = "0%";
+  document.body.style.height= "auto"; 
+  document.body.style.overflow= "scroll";
 }
      
 

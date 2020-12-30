@@ -133,7 +133,7 @@
             
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success btn-block">Login</button>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
                         <span class="signin-modal-link">New Member? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signup-modal" class="sign-up-link">SIGN IN</a></span>
                     </div>
                     </form>
@@ -162,7 +162,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
                         <span class="signup-modal-link">Already Have an Account? <a href="" data-toggle="modal" data-dismiss="modal" data-target="#signin-modal" class="sign-up-link">Login Here</a></span>
                     </div>
                     </form>
@@ -262,23 +262,45 @@
 
     <section class="video-advertising">
         <div class="video-advertising-details">
-            <div style="cursor: pointer;"  onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+            <!-- <div style="cursor: pointer;"  onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
                 <img class="video" src="images/Youtube Video Poster.png" style="cursor:pointer" />
             </div>
              <div style="display:none">
                 <iframe class="video" width="90%" height="60%" src="https://www.youtube.com/embed/9QMOvmpbV2k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-             </div>
+             </div> -->
+             <button class="video-advertising-close-btn" onclick="videoStop()">&times;</button>
+             <div class="videoWrapper videoWrapper169 js-videoWrapper">
+                <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/9QMOvmpbV2k?autoplay=1& modestbranding=1&rel=0&hl=sv"></iframe>
+                <button class="videoPoster js-videoPoster" style="background-image:url(images/1.jpg);">Play video</button>
+              </div>
+              
             <div class="video-title">
                 <p>Peaceful Nature of Our Resort</p>
             </div>
             <div class="video-detalis">
                 <p class="video-detail-description">Do visit our youtube channel for more information</p>
                 <a class="video-detalis-link" href="https://www.youtube.com/channel/UCaQhqvnba5ailjO5jtNyOxg/about" target="_blank" rel="noopener noreferrer">
-                    <p>Learn More></p>
+                    <button class="video-detalis-link-button">Learn More</button >
                 </a>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="insagram-feeds">
+        <div class="insgram-feed-div">
+            <div class="instagram-feed-title">
+                <p>Connect with us on Instagram</p>
+            </div>
+            <div class="instagram-feed-background">
+                <div class="instagram-feed-image">
+                    <p style="color: black;text-align: center;font-size: 24pt;margin-top: 30%;">Your Post Here</p>
+                </div>
             </div>
         </div>
     </section>
+
 
     <section class="resort-amenities">
         <div class="amentites-title">
@@ -336,7 +358,7 @@
         <div class="our-facilities">
             <div class="facilities">
                 <div class="facility-image">
-                    <img src="https://source.unsplash.com/350x370/?conference_Hall,hall" alt="Our-facilities">
+                    <img src="https://source.unsplash.com/350x370/?conference_Hall,conference_meeting" alt="Our-facilities">
                 </div>  
                 <div class="facility-description">
                     <p class="desc-title">Conference Hall</p>
@@ -344,13 +366,13 @@
                 </div> 
                 <div class="facility-learn-more">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        Learn More>
-                    </a>
+                        Learn More
+                    </a> >
                 </div>             
             </div>
             <div class="facilities">
                 <div class="facility-image">
-                    <img src="https://source.unsplash.com/350x370/?Cricket_match,Football" alt="Our-facilities">
+                    <img src="https://source.unsplash.com/350x370/?Football" alt="Our-facilities">
                 </div>  
                 <div class="facility-description">
                     <p class="desc-title">Outdoor Games</p>
@@ -358,8 +380,8 @@
                 </div> 
                 <div class="facility-learn-more">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        Learn More>
-                    </a>
+                        Learn More
+                    </a> >
                 </div>             
             </div>
             <div class="facilities">
@@ -372,8 +394,8 @@
                 </div> 
                 <div class="facility-learn-more">
                     <a href="http://" target="_blank" rel="noopener noreferrer">
-                        Learn More>
-                    </a>
+                        Learn More
+                    </a> >
                 </div>             
             </div>
         </div>
@@ -383,10 +405,10 @@
             </div>  
             <div class="facility-description-landscape">
                 <p class="desc-title">Swimming Pool</p>
-                <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br><br>
+                <p class="facility-description-landscape-info">ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br><br>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
-                    Learn More>
-                </a>
+                    Learn More
+                </a> >
             </div>              
         </div>
     </section>
@@ -443,6 +465,16 @@
             </div>
         </div>
     </section>
+    <hr style="height: 2px;width: 85%;">
+    <section class="newsletter">
+        <div class="newsletter-title">
+            <p>Subscribe us for Offers and Updates</p>
+        </div>
+        <div class="newsletter-inputs">
+            <input type="email" name="newsletter-email" id="newsletter-email" placeholder="Email Address">
+            <button class="newsletter-submit-button">Subscribe</button>
+        </div>
+    </section>
     <footer>
         <div class="footer">
             <div class="quick-links">
@@ -495,5 +527,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="JS/script.js"></script>
+    <script>
+        // poster frame click event
+$(document).on('click','.js-videoPoster',function(ev) {
+  ev.preventDefault();
+  var $poster = $(this);
+  var $wrapper = $poster.closest('.js-videoWrapper');
+  videoPlay($wrapper);
+});
+
+// play the targeted video (and hide the poster frame)
+function videoPlay($wrapper) {
+  var $iframe = $wrapper.find('.js-videoIframe');
+  var src = $iframe.data('src');
+  // hide poster
+  $wrapper.addClass('videoWrapperActive');
+  // add iframe src in, starting the video
+  $iframe.attr('src',src);
+}
+
+// stop the targeted/all videos (and re-instate the poster frames)
+function videoStop($wrapper) {
+  // if we're stopping all videos on page
+  if (!$wrapper) {
+    var $wrapper = $('.js-videoWrapper');
+    var $iframe = $('.js-videoIframe');
+  // if we're stopping a particular video
+  } else {
+    var $iframe = $wrapper.find('.js-videoIframe');
+  }
+  // reveal poster
+  $wrapper.removeClass('videoWrapperActive');
+  // remove youtube link, stopping the video from playing in the background
+  $iframe.attr('src','');
+}
+    </script>
 </body>
 </html>
