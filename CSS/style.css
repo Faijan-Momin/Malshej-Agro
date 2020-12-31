@@ -332,6 +332,25 @@ input[type=number] {
 
 /* Overall CSS END */
 
+@media screen and (max-width: 320px) {
+    .modal{
+        width: 70%;
+        height: 400px;
+        font-size: 10px;
+
+    }
+    .modal input{
+        height: 30px;
+    }
+    .form-check-input{
+        position: relative;
+        top: -12px;
+    }
+    .modal label{
+        margin-top: -15px;
+    }
+
+}
 
 
 
@@ -450,11 +469,13 @@ input[type=number] {
         position: relative;
         justify-content: center;
         text-align: center;
+        left: -25%;
     }
     .signup-modal-link{
         position: relative;
         justify-content: center;
         text-align: center;
+        left: -25px;
     }
     
     
