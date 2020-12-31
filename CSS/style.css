@@ -1427,6 +1427,39 @@ img {vertical-align: middle;}
 /* newsletter END */
 
 
+/* Whatapp Logo */
+.whatsapp-chat{
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 150;
+}
+.whatsapp-chat-logo{
+    padding: 2px;
+}
+.whatsapp-icon{
+    border: none;
+    outline: none;
+    background-image: url('/images/Whatapp-logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: #000000 0px 2px 12px -6px;
+}
+.whatsapp-icon:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 900px) {
+    .whatsapp-chat{
+        display: block;
+    }
+}
+
+/* Whatsapp Logo END */
 
 
 /* Home Page CSS END */
