@@ -88,3 +88,17 @@ function closeNav() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
+
+
+// Instagram heart Like
+
+function instagram_Heart(){
+  var heart = document.getElementsByClassName("fa-heart")[0];
+  if(heart.style.color == "red"){
+    heart.style.color = "transparent";
+  }
+  else{
+    heart.style.color = "red";
+  }
+}
+
