@@ -1098,6 +1098,10 @@ img {vertical-align: middle;}
     color: #407bae;
     margin-bottom: 15px;
 }
+.facility-image img{
+    width: 100%;
+    height: 370px;
+}
 .facility-description-landscape-info{
     color: #666;
 }
