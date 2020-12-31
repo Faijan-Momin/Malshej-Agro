@@ -1020,8 +1020,8 @@ img {vertical-align: middle;}
 /* Facilities  Section*/
 
 .resort-facilities{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 9%;
+    margin-right: 9%;
     
 }
 .facility-title{
@@ -1109,7 +1109,7 @@ img {vertical-align: middle;}
     overflow: hidden;
     box-shadow: #666 0px 2px 12px -6px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 65% auto ;
     background-color: white;
 
 }
@@ -1123,8 +1123,11 @@ img {vertical-align: middle;}
     width: 100%;
     height: 370px;
 }
+
+
 .facility-description-landscape-info{
     color: #666;
+    padding: 15px;
 }
 .facility-description-landscape a{
     color: #407bae;
@@ -1136,13 +1139,19 @@ img {vertical-align: middle;}
         display: block;
         text-align: center;
         margin-bottom: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
     }
     .facilities-landscape img{
-        src: url('https://images.unsplash.com/photo-1609403696510-7b59b5b95f51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        display: none;
+
+    }
+    .facility-image-landscape{
+        background-image: url('https://images.unsplash.com/photo-1609403696510-7b59b5b95f51?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
         height: 370px;
         image-rendering: auto;
-        background-size: cover;
-        margin-left: -150px;
+        background-size: cover; 
     }
     .facility-description-landscape{
         text-align: center;
@@ -1470,8 +1479,8 @@ img {vertical-align: middle;}
 /* Gallery Page CSS  */
 
 .gallary-section{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .gallery-title p{
     color: rgb(0, 0, 0);
