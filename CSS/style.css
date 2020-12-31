@@ -1113,10 +1113,10 @@ img {vertical-align: middle;}
         margin-bottom: 0px;
     }
     .facilities-landscape img{
-        src: url('https://source.unsplash.com/350x370/?Swimming-Pool,swimmer');
         height: 370px;
         image-rendering: auto;
         background-size: cover;
+        margin-left: -150px;
     }
     .facility-description-landscape{
         text-align: center;
