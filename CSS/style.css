@@ -1440,7 +1440,8 @@ img {vertical-align: middle;}
 .whatsapp-icon{
     border: none;
     outline: none;
-    background-image: url('/images/Whatapp-logo.png');
+    background-color: #25D366;
+    /* background-image: url('/images/Whatapp-logo.png'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1448,6 +1449,8 @@ img {vertical-align: middle;}
     width: 55px;
     border-radius: 50%;
     box-shadow: #000000 0px 2px 12px -6px;
+    font-size: 50px;
+    color: white;
 }
 .whatsapp-icon:focus{
     outline: none;
