@@ -231,11 +231,11 @@ input[type=number] {
     background-color:#282828;
     color: white;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 35% 25% 30%;
     margin: auto;
     padding: 3%;
 }
-.quick-lick-title,.contact-us-title,.connect-us-with-title{
+.quick-lick-title,.contact-us-title,.connect-us-with-title,.play-store-app-title{
     font-family: 'Cinzel', serif;
     font-size: 16pt;
 
@@ -249,16 +249,35 @@ input[type=number] {
     cursor: pointer;
 }
 .quick-links a{
-    color: white;
+    color: #a8a8a8;
 }
-.quick-links li:hover{
+.quick-links a:hover{
+    color: white;
     text-decoration: underline;
 }
 
 
 /* Social Media Logo */
+
+.play-store-app{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.play-store-app img{
+   width: 40%;
+   
+}
+.play-store-app-title p{
+    text-align: center;
+    margin-bottom: 2px;
+}
 .connect-us-with-title{
-    padding-left: 10%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .connect-us-with a {
     padding: 1%;
@@ -268,7 +287,9 @@ input[type=number] {
     text-decoration: none;
     margin: 0px 0px;
   }
-  
+  .connect-with-us-icons{
+      text-align: center;
+  }
   .connect-us-with a {
     text-decoration: none;
     color: white;
@@ -485,6 +506,18 @@ input[type=number] {
     .sidenav a {font-size: 18px;}
   }
 
+
+  @media screen and (max-width: 1200px) and (min-width: 900px) {
+    .footer{
+        background-color:#282828;
+        color: white;
+        display: grid;
+        grid-template-columns: 35% 30% 30%;
+        margin: auto;
+        padding: 3%;
+    }
+  }
+
  /* Overall Mobile CSS END*/
 
 
@@ -647,6 +680,17 @@ img {vertical-align: middle;}
 
 /* Mobile Slideshow END */
 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .swiper-container {
+        width: 100%;
+        height: 50%;
+      }
+      .swiper-slide p{
+          font-size: 20px;
+      }
+}
+
+
 /* Home page Banner Advertising END */
 
 
@@ -669,6 +713,11 @@ img {vertical-align: middle;}
         font-size: 1.8rem;
     }
 }
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .welcome-text{
+        font-size: 2.8rem;
+    }
+}
 /* Welcome Text END */
 
 /* Advertising Video */
@@ -689,8 +738,14 @@ img {vertical-align: middle;}
     color: #282828;
     border: none;
     outline: none;
-    margin-left: 95%;
+    margin-left: 97%;
     font-size: 25px;
+}
+.video-advertising-close-btn:focus{
+    outline: none;
+}
+.video-advertising-close-btn:hover{
+    color: #0072ce;
 }
 
 
@@ -871,6 +926,31 @@ img {vertical-align: middle;}
         font-size: 2rem;
         padding: 2%;
     }
+    .video-advertising-close-btn{
+        background-color: transparent;
+        color: #282828;
+        border: none;
+        outline: none;
+        margin-left: 93%;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+    .video-advertising-close-btn{
+        background-color: transparent;
+        color: #282828;
+        border: none;
+        outline: none;
+        margin-left: 96%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .video-advertising{
+        margin-left: 10%;
+        margin-right: 10%;   
+    }
 }
 
 /* Advertising Video END */
@@ -907,14 +987,15 @@ img {vertical-align: middle;}
 .instagram-feed-image{
     padding: 2%;
     border: none;
-    height: 316px;
-    width: 316px;
+    height: 317px;
+    width: 317px;
     margin: auto;
     justify-content: center;
     background-color: white;
     position: relative;
     top: 65px;
 }
+
 
 .instagram-heart{
     border: none;
@@ -952,6 +1033,14 @@ img {vertical-align: middle;}
     }
 }
 
+
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .instagram-feeds{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 2%;
+    }
+}
 /* Instagram feed End */
 
 /* Amenitites */
@@ -1048,6 +1137,13 @@ img {vertical-align: middle;}
     margin-top: 10px;
     background-color: white;
 }
+.facilities img{
+    opacity: 0.95;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
 .desc-title{
     font-family: 'Cinzel', serif;
     font-size: 16pt;
@@ -1100,6 +1196,20 @@ img {vertical-align: middle;}
     }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .resort-facilities{
+        margin-left: 2%;
+        margin-right: 2%;
+        
+    }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .resort-facilities{
+        margin-left: 5%;
+        margin-right: 5%;
+        
+    }
+}
 
 /* Facility LandScape Mdoe */
 
@@ -1281,6 +1391,18 @@ img {vertical-align: middle;}
     }
 }
 
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+    .user-registration{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .no-of-guest input{
+        width: 30%;
+    }
+    .no-of-guest button{
+        width: 30%;
+    }
+}
 
 /* Registration Section END*/
 
@@ -1312,6 +1434,9 @@ img {vertical-align: middle;}
     overflow: hidden;
     margin: 0px;
     padding: 0px;
+}
+.google-map iframe{
+    width: 450px;
 }
 .adress-title{
     margin-top: 6%;
@@ -1348,6 +1473,9 @@ img {vertical-align: middle;}
         box-shadow: #666 0px 2px 12px -6px;
         margin-bottom: 5%;
     }
+    .google-map iframe{
+        width: 100%;
+    }
     .adress-title{
         margin-top: 6%;
         font-size: 20pt;
@@ -1364,6 +1492,12 @@ img {vertical-align: middle;}
     
 }
 
+@media screen and (max-width: 1100px) and (min-width: 900px) {
+    .location-map{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 /* Map Section End */
 
 
@@ -1374,8 +1508,12 @@ img {vertical-align: middle;}
     padding: 3%;
 }
 .newsletter-title p{
-    font-size: 34px;
-    font-family: 'Cinzel',sans-serif;
+    color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 2rem;
+        font-family:'Cinzel', serif;
+        font-weight: 350;
+        padding: 2%;
 }
 .newsletter-inputs{
     font-family: "Open Sans", Arial, sans-serif;
@@ -1543,4 +1681,203 @@ img {vertical-align: middle;}
 
 
 
+/* Shine  Effect*/
 
+ figure {
+    position: relative;
+    overflow: hidden;
+}
+ figure::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+ figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+/* Shine  Effect END */
+
+
+
+
+/* Plan Css */
+
+.faculty-plans-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Cinzel', serif;
+    font-weight: 350;
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+
+.faculty-plan{
+    height: 400px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.faculty-plan-description{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 35px;
+    margin-top: 5%;
+    width: 100%;
+}
+.faculty-plan-description p{
+    padding: 5%;
+
+}
+
+.faculty-plan-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .faculty-plan{
+        height: 400px;
+        padding: 10px;
+        display: none;
+    }
+    .faculty-plan-mobile{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .faculty-plan-mobile img{
+        width: 100%;
+    }
+    .faculty-plan-description{
+        font-family: 'Open Sans',sans-serif;
+        font-size: 12pt;
+        text-align: justify;
+        line-height: 35px;
+        margin-top: 5%;
+        width: 100%;
+        padding: 2px;
+        margin: auto;
+        margin-left: 22%;
+        margin-right: 15%;
+    }
+    .faculty-plan-description p{
+        padding: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) and (min-width: 550px) {
+    .faculty-plan-description{
+        margin-left: 8%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width: 550px) and (min-width: 300px) {
+    .faculty-plan-description{
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-right: 5%;
+        line-height: 25px;
+    }
+}
+
+/* Packages */
+
+.packages-title{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Cinzel', serif;
+    font-weight: 350;
+    margin-top: 5%;
+    text-transform: capitalize;
+}
+
+
+/* Tables */
+.packages-tables{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.package-based-table,.room-based-table{
+    padding: 2%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #6dd1ff;
+    color: white;
+  }
+  tr:nth-child(odd) {
+    background-color: #00c3ff;
+    color: white;
+  }
+
+
+  .package-important-note{
+      font-size: 12pt;
+      font-family: 'Open Sans',sans-serif;
+      font: outline;
+      color: #666;
+      padding: 2%; 
+  }
+  .package-important-note b{
+    font-weight: bolder;
+    color: #000;
+  }
+  .package-important-note-red{
+    font-size: 12pt;
+    font-family: 'Open Sans',sans-serif;
+    font: outline;
+    color: rgb(255, 108, 108);         
+  }
+
+
+
+  @media screen and (max-width: 530px) {
+    table {
+        font-size: 8pt;
+        margin-bottom: 10px;
+      }
+      th, td {
+        text-align: left;
+        padding: 9px;
+        border: 1px solid #ddd;
+      }
+      
+}
+/* Plan Css END */
