@@ -369,7 +369,7 @@
                         We provide you with 3 conference halls with facilities that suit the needs of your business</p>
                 </div> 
                 <div class="facility-learn-more">
-                    <a href="Plans.html#conference-hall" target="_blank" rel="noopener noreferrer">
+                    <a onclick="conference_fac_link()"  target="_blank" rel="noopener noreferrer">
                         Learn More
                     </a> >
                 </div>             
@@ -400,7 +400,7 @@
                         The Indoor games at Malshej include Carrom, Table Tennis, Snooker and many more. </p>
                 </div> 
                 <div class="facility-learn-more">
-                    <a href="Plans.html#indoor-games" target="_blank" rel="noopener noreferrer">
+                    <a onclick="indoor_fac_link()" target="_blank" rel="noopener noreferrer">
                         Learn More
                     </a> >
                 </div>             
@@ -414,7 +414,7 @@
                 <p class="desc-title">Swimming Pool</p>
                 <p class="facility-description-landscape-info">Relax and enjoy a refreshing swim at the swimming pool. 
                     A holiday is incomplete without a swimming pool story.</p><br><br>
-                <a href="Plans.html#swimming" target="_blank" rel="noopener noreferrer">
+                <a onclick="swimming_fac_link()" href="Plans.html#swimming" target="_blank" rel="noopener noreferrer">
                     Learn More
                 </a> <span style="color: #407bae;"> ></span>
             </div>              
@@ -597,25 +597,45 @@ function videoStop($wrapper) {
 // Learn mroe link Change
 
 
-function Facility_LearnMore(lm) {
-  if (lm.matches) { // If media query matches
-    document.body.style.backgroundColor = "yellow";
+
+var lm = window.matchMedia("(max-width: 900px)");
+
+function conference_fac_link(){
+    if (lm.matches) { // If media query matches
+    window.location.assign('Plans.html#conference-hall-info');
   } else {
-   document.body.style.backgroundColor = "pink";
+    window.location.assign('Plans.html#conference-hall');
   }
 }
+
+function indoor_fac_link(){
+    if (lm.matches) { // If media query matches
+    window.location.assign('Plans.html#indoor-game');
+  } else {
+    window.location.assign('Plans.html#indoor-games');
+  }
+}
+
 
 function outdoor_fac_link(){
     if (lm.matches) { // If media query matches
-    window.location.replace('Plans.html#outdoor-game');
+    window.location.assign('Plans.html#outdoor-game');
   } else {
-    window.location.replace('Plans.html#outdoor-games');
+    window.location.assign('Plans.html#outdoor-games');
   }
 }
 
-var lm = window.matchMedia("(max-width: 900px)")
-Facility_LearnMore(lm) // Call listener function at run time
-lm.addListener(myFunction) // Attach listener function on state changes
+function swimming_fac_link(){
+    if (lm.matches) { // If media query matches
+    window.location.assign('Plans.html#swimming-info');
+  } else {
+    window.location.assign('Plans.html#swimming');
+  }
+}
+
+
+
+ // Attach listener function on state changes
     </script>
 </body>
 </html>
