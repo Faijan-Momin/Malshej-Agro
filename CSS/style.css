@@ -1003,10 +1003,11 @@ img {vertical-align: middle;}
     width: 315px;
     margin: auto;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     position: relative;
     top: 65px;
 }
+
 
 
 .instagram-heart{
