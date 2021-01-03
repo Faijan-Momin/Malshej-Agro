@@ -1176,6 +1176,7 @@ img {vertical-align: middle;}
 }
 .facility-learn-more a{
     color: #407bae;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
@@ -1260,6 +1261,7 @@ img {vertical-align: middle;}
 }
 .facility-description-landscape a{
     color: #407bae;
+    cursor: pointer;
 }
 @media screen and (max-width: 900px) {
     .facilities-landscape{
@@ -1291,6 +1293,7 @@ img {vertical-align: middle;}
     .facility-description-landscape a{
         margin-bottom: 15px;
         padding: 0px;
+        cursor: pointer;
     }
 }
 
