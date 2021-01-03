@@ -1905,3 +1905,51 @@ table {
       
 }
 /* Plan Css END */
+
+
+/* ABout Us Page */
+
+.about-us-details{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding-bottom: 5%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.about-us-details-title{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:'Cinzel', serif;
+    font-weight: 350;
+    margin-top: 5%;
+    text-transform: capitalize;
+    padding: 2%;
+}
+.about-us-detail-info{
+    background-color: rgba(255, 255, 255, 0.459);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+@media screen and (max-width: 400px) {
+    .about-us-details-title{
+        font-size: 1.5rem;
+    }
+    .about-us-detail-info{
+        background-color: rgba(255, 255, 255, 0.459);
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+/* About us Page End */
