@@ -12,7 +12,6 @@
     <link rel="preload" href="images/Malshej Agro Logo.png" as="image">
     <link rel="preload" href="images/Malshej-Agro-Logo-Spash.jpg" as="image">
     <style>
-
         .spalsh-screen-overlay {
           height: 0%;
           width: 100%;
@@ -26,20 +25,29 @@
           transition: 0.5s;
         }
         
-        
         .spalsh-screen-overlay img {
           transition: 0.3s;
         }
-        
+        .spash-image{
+            width: 400px;
+            height: 250px;
+        }
         @media screen and (max-height: 450px) {
           .spalsh-screen-overlay {overflow-y: auto;}
+            
+        }
+        @media screen and (max-width: 450px) {
+            .spash-image{
+                width: 280px;
+                height: 150px;
+            }
         }
         </style>
 </head>
 <body style="background-color: white;">
     <div id="spalsh-screen" class="spalsh-screen-overlay">
         <div class="overlay-content">
-            <img src="https://images.unsplash.com/photo-1609406461813-63f4119efa78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1008&q=80" alt="malshej-agro-logo" width="200px" height="130px">
+            <img src="https://images.unsplash.com/photo-1609406461813-63f4119efa78?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1008&q=80" alt="malshej-agro-logo" class="Spash-image">
         </div>
     </div>
     <script>
@@ -52,7 +60,7 @@
             window.onload = openNav();
             window.setTimeout(() => {
                 closeNav();
-            }, 1600);
+            }, 160000000);
 
 
         function openNav() {
