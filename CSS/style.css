@@ -989,6 +989,7 @@ img {vertical-align: middle;}
     border: none;
     box-shadow: #282828 0px 2px 12px -6px;
     border-radius: 7px;
+    background-color: white;
     background: url('https://raw.githubusercontent.com/Faijan-Momin/Malshej-Agro/main/images/instagram.png');
     background-size: cover;
     background-position: center;
@@ -996,10 +997,10 @@ img {vertical-align: middle;}
     
 }
 .instagram-feed-image{
-    padding: 2%;
+    padding: 1%;
     border: none;
-    height: 317px;
-    width: 317px;
+    height: 315px;
+    width: 315px;
     margin: auto;
     justify-content: center;
     background-color: white;
@@ -1161,6 +1162,11 @@ img {vertical-align: middle;}
     color: black;
     padding: 10px;
 }
+.desc-info{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
+    padding: 5%;
+}
 .facility-description{
     color: #666;
 }
@@ -1249,6 +1255,8 @@ img {vertical-align: middle;}
 .facility-description-landscape-info{
     color: #666;
     padding: 15px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 12px;
 }
 .facility-description-landscape a{
     color: #407bae;
@@ -1609,6 +1617,7 @@ img {vertical-align: middle;}
     box-shadow: #000000 0px 2px 12px -6px;
     font-size: 50px;
     color: white;
+    cursor: pointer;
 }
 .whatsapp-icon:focus{
     outline: none;

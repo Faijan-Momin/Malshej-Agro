@@ -364,7 +364,9 @@
                 </div>  
                 <div class="facility-description">
                     <p class="desc-title">Conference Hall</p>
-                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="desc-info">Communicate, Collaborate & Celebrate at Malshej. 
+                        The Edge is an ideal venue for smaller conferences or board meetings.
+                        We provide you with 3 conference halls with facilities that suit the needs of your business</p>
                 </div> 
                 <div class="facility-learn-more">
                     <a href="Plans.html#conference-hall" target="_blank" rel="noopener noreferrer">
@@ -378,10 +380,12 @@
                 </div>  
                 <div class="facility-description">
                     <p class="desc-title">Outdoor Games</p>
-                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="desc-info"> We have number of activities for every age group to stay active during the vacation. 
+                        The real taste of a vacation is all about exploring what all you can indulge in and we offer a wide 
+                        range of facilities to choose from.</p>
                 </div> 
                 <div class="facility-learn-more">
-                    <a href="Plans.html#outdoor-games" target="_blank" rel="noopener noreferrer">
+                    <a onclick="outdoor_fac_link()"  target="_blank" rel="noopener noreferrer">
                         Learn More
                     </a> >
                 </div>             
@@ -392,7 +396,8 @@
                 </div>  
                 <div class="facility-description">
                     <p class="desc-title">Indoor Games</p>
-                    <p>ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="desc-info">Our variety of Indoor Games are for those who want to make the most of their vacation. 
+                        The Indoor games at Malshej include Carrom, Table Tennis, Snooker and many more. </p>
                 </div> 
                 <div class="facility-learn-more">
                     <a href="Plans.html#indoor-games" target="_blank" rel="noopener noreferrer">
@@ -407,7 +412,8 @@
             </div>  
             <div class="facility-description-landscape">
                 <p class="desc-title">Swimming Pool</p>
-                <p class="facility-description-landscape-info">ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br><br>
+                <p class="facility-description-landscape-info">Relax and enjoy a refreshing swim at the swimming pool. 
+                    A holiday is incomplete without a swimming pool story.</p><br><br>
                 <a href="Plans.html#swimming" target="_blank" rel="noopener noreferrer">
                     Learn More
                 </a> <span style="color: #407bae;"> ></span>
@@ -522,7 +528,7 @@
                         <p>Download our app</p>
                     </div>
                     <!-- <img src="images/google-play-badge.png" alt="play store app" style="width: 30%;"> -->
-                    <a href='https://play.google.com/store/apps/details?id=com.jio.myjio&hl=en_IN&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                    <a href='#'>
                         <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
                     </a>
                 </div>
@@ -536,7 +542,7 @@
                         <a href="mailto:malshejagrotf@gmail.com" class="fa fa-google"></a>
                         <a href="https://youtube.com/channel/UCaQhqvnba5ailjO5jtNyOxg" class="fa fa-youtube"></a>
                         <a href="https://instagram.com/malshej.agro.tourism?igshid=13pywmkrljupl" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-pinterest"></i></a>
+                        <a href="https://pin.it/6BRvnDk" class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>
@@ -585,6 +591,31 @@ function videoStop($wrapper) {
   // remove youtube link, stopping the video from playing in the background
   $iframe.attr('src','');
 }
+
+
+
+// Learn mroe link Change
+
+
+function Facility_LearnMore(lm) {
+  if (lm.matches) { // If media query matches
+    document.body.style.backgroundColor = "yellow";
+  } else {
+   document.body.style.backgroundColor = "pink";
+  }
+}
+
+function outdoor_fac_link(){
+    if (lm.matches) { // If media query matches
+    window.location.replace('Plans.html#outdoor-game');
+  } else {
+    window.location.replace('Plans.html#outdoor-games');
+  }
+}
+
+var lm = window.matchMedia("(max-width: 900px)")
+Facility_LearnMore(lm) // Call listener function at run time
+lm.addListener(myFunction) // Attach listener function on state changes
     </script>
 </body>
 </html>
