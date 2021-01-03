@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^index?$ index.html
+
+RewriteRule ^home?$ home.html
+
+RewriteRule ^gallery?$ gallery.html
+
+RewriteRule ^Facilities?$ Plan.html
+
+RewriteRule ^About-us?$ Aboutus.html
