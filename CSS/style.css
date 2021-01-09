@@ -1965,3 +1965,46 @@ table {
     }
 }
 /* About us Page End */
+
+
+
+/* Rservation Page */
+
+.reservations{
+    margin: 2%;
+    padding: 2%;
+  }
+  .resrvation-refresh{
+    margin-left: 92%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    border-radius: 4px;
+    background:  #282828;
+    color: white;
+  }
+  .reservation{
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 14px;
+    padding: 1%;
+    font-family: 'Open Sans',sans-serif;
+    box-shadow: #0072ce 0px 4px 18px -6px;
+    margin-bottom: 15px;
+  }
+  .reservation h2{
+    font-weight: 900;
+    font-size: 30px;
+    padding: 5px;
+  }
+  .reservation p{
+    font-weight: 400;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .recent-reservation{
+    color: #666;
+    padding: 5px;
+    font-size: 13px;
+  }
+/* Rseravation Page END */
