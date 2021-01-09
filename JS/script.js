@@ -101,4 +101,3 @@ function instagram_Heart(){
     heart.style.color = "red";
   }
 }
-
