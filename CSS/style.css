@@ -739,7 +739,7 @@ img {vertical-align: middle;}
 }
 .video-advertising-details{
     background-color: white;
-    box-shadow: #666 0px 2px 12px -6px;
+    box-shadow: #666 0px 2px 22px -2px;
     padding-bottom: 10px;
     padding: 2%;
     padding-top: 0px;
@@ -987,13 +987,14 @@ img {vertical-align: middle;}
     height: 450px;
     width: 320px;
     border: none;
-    box-shadow: #282828 0px 2px 12px -6px;
+    box-shadow: #666 0px 4px 32px 1px;
     border-radius: 7px;
     background-color: white;
     background: url('https://raw.githubusercontent.com/Faijan-Momin/Malshej-Agro/main/images/instagram.png');
     background-size: cover;
     background-position: center;
     background-clip: border-box;
+    
     
 }
 .instagram-feed-image{
@@ -1081,7 +1082,7 @@ img {vertical-align: middle;}
     line-height: 30px;
     border: none;
     border-radius: 50%;
-    box-shadow: #666 0px 2px 12px -6px;
+    box-shadow: #666 0px 4px 8px 2px;
     width: 130px;
     height: 130px;
     padding: 5%;
@@ -1118,7 +1119,7 @@ img {vertical-align: middle;}
         line-height: 30px;
         border: none;
         border-radius: 50%;
-        box-shadow: #666 0px 2px 12px -6px;
+        box-shadow:#666 0px 4px 8px 2px;
         width: 120px;
         height: 120px;
         padding-top: 20px;
@@ -1157,7 +1158,7 @@ img {vertical-align: middle;}
     margin: auto;
     width: 90%;
     overflow: hidden;
-    box-shadow: #666 0px 2px 12px -6px;
+    box-shadow: rgb(160, 160, 160) 0px 3px 15px 0px;
     margin-top: 10px;
     background-color: white;
 }
@@ -1219,7 +1220,7 @@ img {vertical-align: middle;}
         margin: auto;
         width: 100%;
         overflow: hidden;
-        box-shadow: #666 0px 2px 12px -6px;
+        box-shadow: #666 0px 3px 12px -1px;
         margin-top: 10px;
         background-color: white;
 
@@ -1247,7 +1248,7 @@ img {vertical-align: middle;}
     width: 97%;
     margin: auto;
     overflow: hidden;
-    box-shadow: #666 0px 2px 12px -6px;
+    box-shadow:  rgb(160, 160, 160) 0px 3px 15px 0px;
     display: grid;
     grid-template-columns: 65% auto ;
     background-color: white;
@@ -1326,7 +1327,7 @@ img {vertical-align: middle;}
     margin-top: 5%;
 }
 .user-info{
-    box-shadow: #666 0px 2px 12px -6px;
+    box-shadow: #666 0px 1px 12px 1px;
     margin-bottom: 5%;
     background-color: white;
 
@@ -1371,14 +1372,12 @@ img {vertical-align: middle;}
     border: none;
     outline: none;
     margin-bottom: 25px;
-    box-shadow: #666 0px 2px 12px -6px;
 
 }
 .register-button input:hover{
     background-color: white;
     border: 1px solid black;
     color: black;
-    box-shadow: #666 0px 2px 12px -6px;
 }
 
 @media screen and (max-width: 900px) {
@@ -1461,8 +1460,8 @@ img {vertical-align: middle;}
     color: black;
     font-family:'Cinzel', serif;
     text-align: center;
-    box-shadow: #666 0px 2px 12px -6px;
-
+    box-shadow: #666 0px 1px 12px 1px;
+    background-color: rgb(255, 230, 224);
 }
 .google-map{
     overflow: hidden;
@@ -1504,7 +1503,7 @@ img {vertical-align: middle;}
         color: black;
         font-family:'Cinzel', serif;
         text-align: center;
-        box-shadow: #666 0px 2px 12px -6px;
+        box-shadow:#666 0px 4px 32px 1px;
         margin-bottom: 5%;
     }
     .google-map iframe{
@@ -1629,7 +1628,7 @@ img {vertical-align: middle;}
     height: 55px;
     width: 55px;
     border-radius: 50%;
-    box-shadow: #000000 0px 2px 12px -6px;
+    box-shadow: #000 0px 4px 32px 1px;
     font-size: 50px;
     color: white;
     cursor: pointer;
